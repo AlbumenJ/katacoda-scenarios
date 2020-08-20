@@ -13,8 +13,10 @@ helm install registry stable/docker-registry \
   
 nohup kubectl port-forward --namespace kube-system \
 $(kubectl get po -n kube-system | grep registry-docker-registry | \
-awk '{print $1;}') 5000:4567 >/dev/null 2>&1 &
+awk '{print $1;}') 4567:4567 >/dev/null 2>&1 &
 
 echo "10.98.0.10 registry.test.training.katacoda.com" >> /etc/hosts
 
 export JAVA_HOME=/usr/lib/jvm/default-java
+
+clear
