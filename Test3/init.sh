@@ -16,6 +16,6 @@ nohup kubectl port-forward --namespace kube-system \
 $(kubectl get po -n kube-system | grep registry-docker-registry | \
 awk '{print $1;}') 5000:5000 >/dev/null 2>&1 &
 
-echo "registry.test.training.katacoda.com 10.98.0.10" >> /etc/hosts
+echo "10.98.0.10 registry.test.training.katacoda.com" >> /etc/hosts
 
 export JAVA_HOME=/usr/lib/jvm/default-java
