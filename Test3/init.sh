@@ -15,16 +15,11 @@ git clone https://github.com/nacos-group/nacos-k8s.git
 
 cd ./nacos-k8s/helm/
 
-helm install nacos ./nacos \ 
-  --namespace kube-system \
-  --set service.type=ClusterIP \
-  --set service.clusterIP=10.98.0.11
+helm install nacos ./nacos --namespace kube-system --set service.type=ClusterIP --set service.clusterIP=10.99.0.10 
   
 cd ~/
 
 echo "10.98.0.10 registry.test.training.katacoda.com" >> /etc/hosts
-echo "10.98.0.11 nacos.test.training.katacoda.com" >> /etc/hosts
+echo "10.99.0.10 nacos.test.training.katacoda.com" >> /etc/hosts
 
 export JAVA_HOME=/usr/lib/jvm/default-java
-
-clear
