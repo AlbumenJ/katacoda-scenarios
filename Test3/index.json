@@ -19,6 +19,7 @@
     }
   },
   "environment": {
+    "showdashboard": true,
     "uilayout": "terminal",
     "dashboards": [
       {"name": "Nacos Dashboard", "port": 30000}
