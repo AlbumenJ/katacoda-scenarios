@@ -10,7 +10,7 @@ git clone https://github.com/nacos-group/nacos-k8s.git
 
 cd ./nacos-k8s/helm/
 
-helm install nacos . --namespace kube-system --set service.type=ClusterIP --set service.clusterIP=10.99.0.10 
+helm install nacos . --namespace kube-system --set service.type=ClusterIP --set service.clusterIP=10.98.1.10 
   
 cd ~/
 
