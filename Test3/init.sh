@@ -12,9 +12,9 @@ helm install stable/docker-registry \
   --set service.type=ClusterIP \
   --set service.clusterIP=10.98.0.10
   
-kubectl port-forward --namespace kube-system \
+nohup kubectl port-forward --namespace kube-system \
 $(kubectl get po -n kube-system | grep registry-docker-registry | \
-awk '{print $1;}') 5000:5000 &
+awk '{print $1;}') 5000:5000 >/dev/null 2>&1 &
 
 echo "registry.test.training.katacoda.com 10.98.0.10" >> /etc/hosts
 
