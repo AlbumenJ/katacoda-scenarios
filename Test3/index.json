@@ -1,7 +1,7 @@
 {
-  "title": "Test2",
-  "description": "Test2",
-  "difficulty": "Intermediate",
+  "title": "Test3",
+  "description": "Test3",
+  "difficulty": "Beginner",
   "time": "60 minutes",
   "details": {
     "steps": [
@@ -17,7 +17,9 @@
       "text": "finish.md"
     }
   },
-  "environment": {},
+  "environment": {
+    "uilayout": "terminal-terminal"
+  },
   "backend": {
     "imageid": "kubernetes-cluster-running"
   }
