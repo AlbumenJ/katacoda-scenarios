@@ -15,6 +15,5 @@ helm install nacos . --namespace kube-system
 cd ~/
 
 echo "10.98.0.10 registry.test.training.katacoda.com" >> /etc/hosts
-echo "10.99.0.10 nacos.test.training.katacoda.com" >> /etc/hosts
 
 export JAVA_HOME=/usr/lib/jvm/default-java
