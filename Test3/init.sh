@@ -1,6 +1,8 @@
 #!/bin/bash
 
-helm init --client-only
+helm init
+
+sleep 3
 
 helm repo add stable https://kubernetes-charts.storage.googleapis.com
 
