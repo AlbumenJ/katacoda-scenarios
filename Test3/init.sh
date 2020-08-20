@@ -4,12 +4,7 @@ launch.sh
 
 helm repo add stable https://kubernetes-charts.storage.googleapis.com
 
-helm install registry stable/docker-registry \
-  --version 1.9.4 \
-  --namespace kube-system \
-  --set service.port=4567 \
-  --set service.type=ClusterIP \
-  --set service.clusterIP=10.98.0.10
+helm install registry stable/docker-registry --version 1.9.4 --namespace kube-system --set service.port=4567 --set service.type=ClusterIP --set service.clusterIP=10.98.0.10
 
 git clone https://github.com/nacos-group/nacos-k8s.git
 
