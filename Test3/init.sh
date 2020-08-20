@@ -10,12 +10,20 @@ helm install registry stable/docker-registry \
   --set service.port=4567 \
   --set service.type=ClusterIP \
   --set service.clusterIP=10.98.0.10
+
+git clone https://github.com/nacos-group/nacos-k8s.git
+
+cd ./nacos-k8s/helm/
+
+helm install nacos ./nacos \ 
+  --namespace kube-system \
+  --set service.type=ClusterIP \
+  --set service.clusterIP=10.98.0.11
   
-nohup kubectl port-forward --namespace kube-system \
-$(kubectl get po -n kube-system | grep registry-docker-registry | \
-awk '{print $1;}') 4567:4567 >/dev/null 2>&1 &
+cd ~/
 
 echo "10.98.0.10 registry.test.training.katacoda.com" >> /etc/hosts
+echo "10.98.0.11 nacos.test.training.katacoda.com" >> /etc/hosts
 
 export JAVA_HOME=/usr/lib/jvm/default-java
 
