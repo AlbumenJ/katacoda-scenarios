@@ -2,7 +2,7 @@
 
 helm init
 
-sleep 3
+sleep 5
 
 helm repo add stable https://kubernetes-charts.storage.googleapis.com
 
