@@ -19,7 +19,10 @@
     }
   },
   "environment": {
-    "uilayout": "terminal"
+    "uilayout": "terminal",
+    "dashboards": [
+      {"name": "Nacos Dashboard", "port": 30000}
+    ]
   },
   "backend": {
     "imageid": "kubernetes-cluster-running:1.18"
