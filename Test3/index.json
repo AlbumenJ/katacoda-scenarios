@@ -1,12 +1,36 @@
 {
-  "title": "Test3",
-  "description": "Test3",
+  "title": "Dubbo Kubernetes Registry",
+  "description": "Dubbo support Kubernetes Native Service",
   "difficulty": "Beginner",
-  "time": "60 minutes",
+  "time": "120 minutes",
   "details": {
     "steps": [
       {
-        "title": "Step 1",
+        "title": "Prepare environment configuration for API Server",
+        "text": "step1.md"
+      },
+      {
+        "title": "Deploy program to registry",
+        "text": "step1.md"
+      },
+      {
+        "title": "Deploy image to Kubernetes",
+        "text": "step1.md"
+      },
+      {
+        "title": "Run consumer test",
+        "text": "step1.md"
+      },
+	  {
+        "title": "Prepare environment configuration for DNS",
+        "text": "step1.md"
+      },
+      {
+        "title": "Deploy program to registry and Kubernetes",
+        "text": "step1.md"
+      },
+      {
+        "title": "Run consumer test",
         "text": "step1.md"
       }
     ],
