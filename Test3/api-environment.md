@@ -109,7 +109,7 @@ Export there properties as environment properties.
 
 `export API_HOST=$(kubectl cluster-info | grep 'Kubernetes master' | awk '/http/ {print $NF}' | sed 's/:/ /g' | sed 's/\// /g' | awk '{print $2}')`{{execute}}
 
-`export API_PORT=$(kubectl cluster-info | grep 'Kubernetes master' | awk '/http/ {print $NF}' | sed 's/:/ /g' | sed 's/\// /g' | awk '{print $3}' | sed 's/[^[:digit:].-]/ /g' | awk '{print $1}')` {{execute}}
+`export API_PORT=$(kubectl cluster-info | grep 'Kubernetes master' | awk '/http/ {print $NF}' | sed 's/:/ /g' | sed 's/\// /g' | awk '{print $3}' | sed 's/[^[:digit:].-]/ /g' | awk '{print $1}')`{{execute}}
 
 `export NAOCS_HOST=$(kubectl get service -n kube-system | grep nacos | awk '{print $3}')`{{execute}}
 
@@ -128,3 +128,4 @@ sed -i 's/\${your nacos ip here}/'"$NAOCS_HOST"'/g' ./src/main/resources/spring/
 sed -i 's/\${your kubernetes api server port here}/'"$API_PORT"'/g' ./src/main/resources/spring/dubbo-provider.properties && \
 sed -i 's/\${your ServiceAccount token here}/'"$TOKEN"'/g' ./src/main/resources/spring/dubbo-provider.properties && \
 sed -i 's/\${your nacos ip here}/'"$NAOCS_HOST"'/g' ./src/main/resources/spring/dubbo-provider.properties`{{execute}}
+
