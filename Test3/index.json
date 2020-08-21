@@ -7,31 +7,31 @@
     "steps": [
       {
         "title": "Prepare environment configuration for API Server",
-        "text": "step1.md"
+        "text": "api-environment.md"
       },
       {
         "title": "Deploy program to registry",
-        "text": "step1.md"
+        "text": "api-registry.md"
       },
       {
         "title": "Deploy image to Kubernetes",
-        "text": "step1.md"
+        "text": "api-kubernetes.md"
       },
       {
         "title": "Run consumer test",
-        "text": "step1.md"
+        "text": "api-consumer.md"
       },
 	  {
         "title": "Prepare environment configuration for DNS",
-        "text": "step1.md"
+        "text": "dns-environment.md"
       },
       {
         "title": "Deploy program to registry and Kubernetes",
-        "text": "step1.md"
+        "text": "dns-deploy.md"
       },
       {
         "title": "Run consumer test",
-        "text": "step1.md"
+        "text": "dns-consumer.md"
       }
     ],
     "intro": {
