@@ -14,7 +14,7 @@ The example project is based on Maven, and we can compile it with:
 
 The `Dockerfile` has been prepared in current folder.
 
-`cat Dockerfile`
+`cat Dockerfile`{{execute}}
 
 
 
