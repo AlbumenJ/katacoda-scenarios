@@ -2,7 +2,7 @@
   "title": "Dubbo Kubernetes Registry",
   "description": "Dubbo support Kubernetes Native Service",
   "difficulty": "Beginner",
-  "time": "120 minutes",
+  "time": "60 minutes",
   "details": {
     "steps": [
       {
