@@ -76,3 +76,5 @@ After a few seconds wait, the pods are created to Kubernetes Cluster.
 `kubectl get pods -n dubbo-demo`{{execute}}
 
 `kubectl get service -n dubbo-demo`{{execute}}
+
+`kubectl get endpoints -n dubbo-demo`{{execute}}

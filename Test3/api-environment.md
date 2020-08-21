@@ -9,7 +9,6 @@ The first part of this scenarios is API Server.
 `cd ./dubbo-samples-kubernetes-apiserver`{{execute}}
 
 
-
 The first stage of using API Server is creating a Service Account for Dubbo.
 
 
