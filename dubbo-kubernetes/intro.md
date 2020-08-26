@@ -3,7 +3,3 @@ In this scenario, you can experience the new feature of How Dubbo work with Kube
 
 
 Dubbo Kubernetes Registry provide two ways to work with Kubernetes. One is using API Server, another is using DNS. 
-
-
-
-Note: in this scenario, we use Nacos as config center.
