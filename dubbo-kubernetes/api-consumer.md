@@ -6,7 +6,7 @@ Now, we can start the consumer to consume providers deployed on Kubernetes.
 
 
 
-At the end of the output, you will see `hi` from provider.
+At the end of the output, you will see `result: hello, Kubernetes Api Server` from provider.
 
 
 
@@ -14,7 +14,7 @@ At the end of this part, using the following command to clear the environment.
 
 
 
-`Ctrl + C`{{execute interrupt}}
+`echo`{{execute interrupt}}
 
 `kubectl delete -f deploy.yml -n dubbo-demo`{{execute}}
 
