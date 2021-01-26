@@ -2,11 +2,9 @@
 
 launch.sh
 
-helm repo add stable https://kubernetes-charts.storage.googleapis.com
+docker run -d -p 4567:5000 -v /opt/registry/data:/var/lib/registry --name registry registry:2
 
-helm install registry stable/docker-registry --version 1.9.4 --namespace kube-system --set service.port=4567 --set service.type=ClusterIP --set service.clusterIP=10.98.0.10
-
-echo "10.98.0.10 registry.test.training.katacoda.com" >> /etc/hosts
+echo "[[HOST_IP]] registry.test.training.katacoda.com" >> /etc/hosts
 
 export JAVA_HOME=/usr/lib/jvm/default-java
 
