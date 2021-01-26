@@ -10,13 +10,9 @@ echo "10.98.0.10 registry.test.training.katacoda.com" >> /etc/hosts
 
 export JAVA_HOME=/usr/lib/jvm/default-java
 
-git clone https://github.com/AlbumenJ/dubbo-samples.git
+git clone https://github.com/Apache/dubbo-samples.git
 
-cd ./dubbo-samples
-
-git checkout 3.0-kubernetes
-
-cd ./java/dubbo-samples-kubernetes
+cd ./dubbo-samples/dubbo-samples-kubernetes
 
 clear
 
